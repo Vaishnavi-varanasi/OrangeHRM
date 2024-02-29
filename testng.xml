@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1">
+  <test name="SequentialTests">
+    <classes>
+      <class name="Axis.OrangeHRM.LoginOHRM"/>
+      <class name="Axis.OrangeHRM.AddImmigrationValid"/>
+      <class name="Axis.OrangeHRM.AddAttachment"/>
+      <class name="Axis.OrangeHRM.BlankAndInvalidInput"/>
+      <class name="Axis.OrangeHRM.DeleteRecord"/>
+      <class name="Axis.OrangeHRM.JobView"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

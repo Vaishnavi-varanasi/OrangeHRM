@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-29T23:25:13 IST" name="Suite" finished-at="2024-02-29T23:28:39 IST" duration-ms="206202">
+    <groups>
+    </groups>
+    <test started-at="2024-02-29T23:25:13 IST" name="SequentialTests" finished-at="2024-02-29T23:28:39 IST" duration-ms="206202">
+      <class name="Axis.OrangeHRM.BlankAndInvalidInput">
+        <test-method signature="login()[pri:0, instance:Axis.OrangeHRM.BlankAndInvalidInput@28f2a10f]" started-at="2024-02-29T23:26:48 IST" name="login" finished-at="2024-02-29T23:27:11 IST" duration-ms="23009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="InvalidCreds()[pri:0, instance:Axis.OrangeHRM.BlankAndInvalidInput@28f2a10f]" started-at="2024-02-29T23:27:11 IST" name="InvalidCreds" finished-at="2024-02-29T23:27:42 IST" duration-ms="31127" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@placeholder='yyyy-dd-mm'])[2]"}
+  (Session info: chrome=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [565c776c31c3179493266eb071792227, findElement {using=xpath, value=(//input[@placeholder='yyyy-dd-mm'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50489}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50489/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 565c776c31c3179493266eb071792227]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@placeholder='yyyy-dd-mm'])[2]"}
+  (Session info: chrome=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [565c776c31c3179493266eb071792227, findElement {using=xpath, value=(//input[@placeholder='yyyy-dd-mm'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50489}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50489/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 565c776c31c3179493266eb071792227
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at Axis.OrangeHRM.BlankAndInvalidInput.InvalidCreds(BlankAndInvalidInput.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidCreds -->
+      </class> <!-- Axis.OrangeHRM.BlankAndInvalidInput -->
+      <class name="Axis.OrangeHRM.JobView">
+        <test-method signature="login()[pri:0, instance:Axis.OrangeHRM.JobView@6da21078]" started-at="2024-02-29T23:28:07 IST" name="login" finished-at="2024-02-29T23:28:33 IST" duration-ms="25430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="Job()[pri:0, instance:Axis.OrangeHRM.JobView@6da21078]" started-at="2024-02-29T23:28:33 IST" name="Job" finished-at="2024-02-29T23:28:39 IST" duration-ms="6340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Job -->
+      </class> <!-- Axis.OrangeHRM.JobView -->
+      <class name="Axis.OrangeHRM.AddImmigrationValid">
+        <test-method signature="login()[pri:0, instance:Axis.OrangeHRM.AddImmigrationValid@73700b80]" started-at="2024-02-29T23:25:41 IST" name="login" finished-at="2024-02-29T23:26:08 IST" duration-ms="27108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="AddImmigration()[pri:0, instance:Axis.OrangeHRM.AddImmigrationValid@73700b80]" started-at="2024-02-29T23:26:08 IST" name="AddImmigration" finished-at="2024-02-29T23:26:16 IST" duration-ms="7963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddImmigration -->
+      </class> <!-- Axis.OrangeHRM.AddImmigrationValid -->
+      <class name="Axis.OrangeHRM.AddAttachment">
+        <test-method signature="login()[pri:0, instance:Axis.OrangeHRM.AddAttachment@47faa49c]" started-at="2024-02-29T23:26:16 IST" name="login" finished-at="2024-02-29T23:26:41 IST" duration-ms="25053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="Attachment()[pri:0, instance:Axis.OrangeHRM.AddAttachment@47faa49c]" started-at="2024-02-29T23:26:41 IST" name="Attachment" finished-at="2024-02-29T23:26:48 IST" duration-ms="6733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Attachment -->
+      </class> <!-- Axis.OrangeHRM.AddAttachment -->
+      <class name="Axis.OrangeHRM.DeleteRecord">
+        <test-method signature="login()[pri:0, instance:Axis.OrangeHRM.DeleteRecord@f736069]" started-at="2024-02-29T23:27:42 IST" name="login" finished-at="2024-02-29T23:27:59 IST" duration-ms="17519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="Deletefile()[pri:0, instance:Axis.OrangeHRM.DeleteRecord@f736069]" started-at="2024-02-29T23:27:59 IST" name="Deletefile" finished-at="2024-02-29T23:28:07 IST" duration-ms="7887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deletefile -->
+      </class> <!-- Axis.OrangeHRM.DeleteRecord -->
+      <class name="Axis.OrangeHRM.LoginOHRM">
+        <test-method signature="login()[pri:0, instance:Axis.OrangeHRM.LoginOHRM@2df9b86]" started-at="2024-02-29T23:25:13 IST" name="login" finished-at="2024-02-29T23:25:41 IST" duration-ms="27971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- Axis.OrangeHRM.LoginOHRM -->
+    </test> <!-- SequentialTests -->
+  </suite> <!-- Suite -->
+</testng-results>
